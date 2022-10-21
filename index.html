@@ -1,0 +1,924 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Open Weader</title>
+  </head>
+  <body class="bg-light">
+    <header>
+        <div class="brand container">
+            <h1 id="brand__child">Open Weader</h1>
+            <div class="brand brand__child">
+              <h4 id="brand__child-time".>sunday : sunday : sunday </h4>
+            </div>
+        </div>
+        
+      <nav>
+        <div class="menu">
+            <!-- <div class="list-item__arrow">
+              <a class="menu-item__child__arrow text-decoration-none" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>                  
+              </a>
+            </div> -->
+            <ul class="menu-ul">
+                <li class="list-item"><a class="menu-item__child text-decoration-none" href="#">Home</a></li>
+                <li class="list-item"><a class="menu-item__child text-decoration-none" href="#">Blog</a></li>
+                <li class="list-item"><a class="menu-item__child text-decoration-none" href="#">Counteries</a></li>
+                <li class="list-item"><a class="menu-item__child text-decoration-none" href="#">About</a></li>
+                <li class="list-item"><a class="menu-item__child text-decoration-none" href="#">Apps</a></li>
+            </ul>
+            <!-- <div class="list-item__arrow">
+              <a class="menu-item__child__arrow text-decoration-none" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </a>
+            </div> -->
+        </div>
+        <div class="search-console">
+            <input type="text" class="input" placeholder="Search City">
+            <a href="#" class="search-btn text-decoration-none fs-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ss bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+              Search  
+            </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container overflow-hidden">
+        <div class="row gy-5 mt-3">
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/3329869.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Tehran
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree__tehran"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon" alt="">
+                  Status : <span id="status__tehran"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity__tehran"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind__tehran"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/Aerial_View_of_Damavand_26.11.2008_04-23-59.JPG" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Alborz
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon" alt="">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/Qom.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Qom
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                <img src="assets/icons/icons8-sun-40.png" class="city-icon" alt="">
+                  Status : <span id="status"></span>
+              </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/Azarbayjan gharbi.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Azarbayjan Sharghi
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png"class="city-icon">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/Azarbayjan gharbi.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Azarbayjan gharbi
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/ardabiم.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City :
+                  Ardebil
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon"t="">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/Isfahan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City :
+                  Isfahan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon"t="">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/illam.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Illam
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                <img src="assets/icons/icons8-sun-40.png" class="city-icon"t="">  
+                 Status : <span id="status"></span>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/booshehr.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  Booshehr :
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">  
+                  Status : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="wind"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/mashhad.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  KhorasanRazavi
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">  
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/khorasan shomali.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  KhorasanShomali
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">  
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/khoozestan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Khoozestan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/zanjan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Zanjan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon" alt="">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/Semnan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City:
+                  Semnan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon" alt="">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/Sistan Baloochestan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                    City : 
+                    Sistan Baloochestan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">  
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/farse.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City :
+                  Farse
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon"t="">  
+                  Status : <span id="status"></span>
+                </h5>
+                  <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/Qazvin.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : Qazvin
+
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon" alt="">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/kordestan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Kordestan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">  
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/kerman.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City: 
+                  Kerman
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon" alt="">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/kermanshah.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Kermanshah
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">  
+                  Satus : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/Kohgilooye va Boyoorahmad.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City:
+                  Kohgilooye va Boyoorahmad
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">  
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/golestan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City:
+                  Golestan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">  
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/gilan.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Gilan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                <img src="assets/icons/icons8-sun-40.png" class="city-icon"t="">  
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/lorestan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City: 
+                  Lorestan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">  
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/mazandaran.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City:
+                  Mazandaran
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon">  
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/markazi.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Markazi
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon"t="">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/hormozgan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Hormozgan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon"> 
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/hamadan.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City : 
+                  Hamedan
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-sun-40.png" class="city-icon"t="">
+                  Status : <span id="status"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 city-body">
+            <div class="card">
+              <img src="assets/city img/yazd.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-city-buildings-40.png" class="city-icon" alt="">
+                  City:
+                  Yazd
+                </h5>
+                <h5 class="card-title">
+                  <img src="assets/icons/icons8-temperature (1).gif" class="city-icon" alt="...">
+                  Degree : <span id="degree"></span>
+                </h5>
+                <h5>
+                <img src="assets/icons/icons8-sun-40.png" class="city-icon" alt="">
+                Status : <span id="status"></span>
+              </h5>
+                <h5>
+                  <img src="assets/icons/icons8-temperature-48.png" class="city-icon" alt="">
+                  Humidity : <span id="humidity"></span>
+                </h5>
+                <h5>
+                  <img src="assets/icons/icons8-speedometer-40.png" class="city-icon" alt="">
+                  Wind Speed : <span id="wind"></span>
+                </h5>
+                <a href="#" class="btn btn-primary mt-2">Go to Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr>
+    <footer>
+      <h6 class="text-center">Powered By FryTiger</h6>
+    </footer>
+    <script src="scripts/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
